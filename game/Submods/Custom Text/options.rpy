@@ -10,7 +10,7 @@ init -990 python:
             "Go to line 63 and replace \"1eud\" with the expression code you copied before.\n"
             "Tell Monika that you'll restart your game, then write your text and choose \"Custom\"!"
         ),
-        version="1.1.0",
+        version="1.2.0",
         version_updates={}
     )
 
