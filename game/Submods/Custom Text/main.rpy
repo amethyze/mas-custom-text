@@ -24,7 +24,7 @@ label monika_text:
             m 1eua "[moniText]"
             return
 
-        "Default (Mouth)":
+        "Default (Open Mouth)":
             m 1eub "[moniText]"
             return
 
@@ -32,7 +32,7 @@ label monika_text:
             m 1ekc "[moniText]"
             return
 
-        "Worried (Mouth)":
+        "Worried (Open Mouth)":
             m 1ekc "[moniText]"
             return
 
@@ -40,7 +40,7 @@ label monika_text:
             m 1euc "[moniText]"
             return
 
-        "Surprised (Mouth)":
+        "Surprised (Open Mouth)":
             m 1eud "[moniText]"
             return
 
@@ -48,7 +48,7 @@ label monika_text:
             m 1etc "[moniText]"
             return
 
-        "Confused (Mouth)":
+        "Confused (Open Mouth)":
             m 1etd "[moniText]"
             return
 
@@ -67,7 +67,7 @@ label monika_text:
     menu:
         m "What expression should I do?{fast}"
 
-        "Angry (Mouth)":
+        "Angry (Open Mouth)":
             m 1efd "[moniText]"
             return
 
@@ -75,7 +75,7 @@ label monika_text:
             m 1hua "[moniText]"
             return
 
-        "Happy (Mouth)":
+        "Happy (Open Mouth)":
             m 1hub "[moniText]"
             return
 
@@ -83,7 +83,7 @@ label monika_text:
             m 1tua "[moniText]"
             return
 
-        "Smug (Mouth)":
+        "Smug (Open Mouth)":
             m 1tub "[moniText]"
             return
 
@@ -91,7 +91,7 @@ label monika_text:
             m 1sua "[moniText]"
             return
 
-        "Sparkling (Mouth)":
+        "Sparkling (Open Mouth)":
             m 1sub "[moniText]"
             return
 
@@ -99,7 +99,7 @@ label monika_text:
             m 1nua "[moniText]"
             return
 
-        "Wink (Left & Mouth)":
+        "Wink (Left & Open Mouth)":
             m 1nub "[moniText]"
             return
 
@@ -114,7 +114,7 @@ label monika_text:
     menu:
         m "What expression should I do?{fast}"
 
-        "Wink (Right & Mouth)":
+        "Wink (Right & Open Mouth)":
             m 1kub "[moniText]"
             return
 
@@ -122,7 +122,7 @@ label monika_text:
             m 1gua "[moniText]"
             return
 
-        "Smug (Left & Mouth)":
+        "Smug (Left & Open Mouth)":
             m 1gub "[moniText]"
             return
 
@@ -130,7 +130,7 @@ label monika_text:
             m 1mua "[moniText]"
             return
 
-        "Smug (Right & Mouth)":
+        "Smug (Right & Open Mouth)":
             m 1mub "[moniText]"
             return
     return
