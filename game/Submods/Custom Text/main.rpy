@@ -106,4 +106,6 @@ label monika_text:
         m 1kua "[moniText]" 
     elif _return == "winkl":
         m 1kub "[moniText]" 
+    elif _return == "cus":
+        m 1eud "[moniText]"
     return
