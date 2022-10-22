@@ -3,8 +3,8 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_text",
-            prompt="Custom Text",
-            category=["Custom Text"],
+            prompt="Can you say something for me?",
+            category=["misc", "monika"],
             pool=True,
             unlocked=True
         )
@@ -44,10 +44,10 @@ label monika_text:
             ("Wink (Left)", "winkl", False, False),
             ("Wink (Left / Open Mouth)", "winklb", False, False),
             ("Wink (Right)", "winkr", False, False),
-            ("Wink (Right / Open Mouth", "winkrb", False, False),
-            ("Custom", "cus", True, False)
+            ("Wink (Right / Open Mouth", "winkrb", False, False)
             ]
         final_items = [
+                ("Custom", "cus", True, False, 0),
                 (_("Nevermind."), "nvm", False, False, 0)
             ]
 
@@ -107,5 +107,38 @@ label monika_text:
     elif _return == "winkl":
         m 1kub "[moniText]" 
     elif _return == "cus":
-        m 1eud "[moniText]"
+        m 1eud "[moniText]" # This is the expression you should edit! Change "1eud" for the code you got from the Expression Previewer! Be careful to not edit anything else unless you know what you're doing. I love you~
+    return
+
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="monika_customhelp",
+            prompt="How do you use the \"Custom\" expression on the Custom Text submod?",
+            category=["monika"],
+            pool=True,
+            unlocked=True
+        )
+    )
+
+label monika_customhelp:
+    m 1fua "Oh, it's pretty simple!"
+    m 3eub "First of all, open the folder where you have me installed. "
+    extend 3hub "The same one where the executable is!"
+    m 1euu "You should see a folder called \"game\". Open it."
+    m 2ekd "Please, [player], be careful with everything on here."
+    m 2gksdlx "All of these files are my code, after all..."
+    m 3esb "Next, open the \"Submods\" folder, then the \"Custom Text\" folder."
+    m 1hua "You should now be seeing three files! The only one we need is \"main.rpy\", though."
+    m 1esb "Open it with any text editor that isn't the default notepad of Windows. "
+    extend 3ekb "Because of how it works, it could break the file!"
+    m 1esa "Go to line 110, and you'll see I left you a comment!"
+    m 1fsa "In that same line, look for the text \"1eud\"."
+    m 1hksdla "Unless this isn't your first time doing this... In that case, just search the expression you used last time."
+    m 1eua "After that, just ask me to use the Expression Previewer, and with the options, select the expression you want me to use."
+    m 4eub "There should be a Copy button on the bottom right, click it once you're happy with the results and replace \"1eud\" (or your previous expression) with your new code."
+    m 1hub "Tell me you want to restart your game, and after that you can use the Custom expression perfectly!"
+    m 1fksdlp "I know the process is a bit long, but the developer didn't know how else to implement it. Sorry!"
+    m 1fkb "I hope you still enjoy the submod. It took the developer a very long time to make!"
     return

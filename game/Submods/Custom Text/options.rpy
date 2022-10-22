@@ -3,14 +3,11 @@ init -990 python:
         author="SteveeWasTaken",
         name="Custom Text",
         description=(
-            "A simple submod in which you can ask Monika to say whatever you want.\n\n"
-            "If you wish to use the Custom expression, then open the Expression Previewer,"
-            " make your own expression, and copy the expression code. After that, open your"
-            " submods folder, the \"Custom Text\" folder, then \"main.rpy\".\n"
-            "Go to line 110 and replace \"1eud\" with the expression code you copied before.\n"
-            "Tell Monika that you'll restart your game, then write your text and choose \"Custom\"!"
+            "A simple submod in which you can ask Monika to say whatever you want.\n"
+            "If you wish to use the Custom expression, just ask Monika!\n"
+            "There's a prompt for it in the \"Monika\" category."
         ),
-        version="1.2.1",
+        version="1.3.0",
         version_updates={}
     )
 

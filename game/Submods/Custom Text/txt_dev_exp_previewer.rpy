@@ -6,7 +6,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="custom_dev_exp_previewer",
-            category=["Custom Text"],
+            category=["dev"],
             prompt="Expression Previewer",
             pool=True,
             unlocked=True
